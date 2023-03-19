@@ -1,9 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
-import styles from "./../styles/Home.module.css";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import styles from "./../styles/Home.module.css";  
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,9 +17,8 @@ export default function Home() {
 				/>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<Navbar />
 			<div>
-				<img src={`./home.jpg`} alt='' />
+				<img src={`./home.jpg`} alt='' className="w-full" />
 			</div>
 			<section className="text-gray-600 body-font">
 				<div className="container px-5 py-24 mx-auto">
@@ -104,8 +101,6 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
-			<Footer />
-
 		</>
 	);
 }
