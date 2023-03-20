@@ -7,6 +7,8 @@ const Slug = () => {
     const [pin, setPin] = useState();
     const [service, setService] = useState();
 
+    // add new change
+
     const checkServiceability = async () => {
         let pins = await fetch('http://localhost:3000/api/pincode');
         let pinsJson = await pins.json();
